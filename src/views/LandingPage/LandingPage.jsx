@@ -24,7 +24,7 @@ import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
-
+import { Link } from "react-router-dom";
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
@@ -32,7 +32,7 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
-
+import * as Constants from "views/Vars.jsx"
 import Parallax from "components/Parallax/Parallax.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
@@ -42,7 +42,7 @@ import ProductSection from "./Sections/ProductSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 
-const dashboardRoutes = [];
+const dashboardRoutes = ["/"];
 
 class LandingPage extends React.Component {
   render() {
@@ -52,7 +52,8 @@ class LandingPage extends React.Component {
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="Supporters of NHS Orchestras"
+          brand={Constants.siteBrand}
+
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{

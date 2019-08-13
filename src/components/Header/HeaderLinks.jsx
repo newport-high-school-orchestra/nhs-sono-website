@@ -87,7 +87,7 @@ function HeaderLinks({ ...props }) {
             <Link to="/" className={classes.dropdownLink}>
               Officers
             </Link>,
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/conductor" className={classes.dropdownLink}>
               Our Conductor
           </Link>,
             <Link to="/" className={classes.dropdownLink}>
@@ -103,7 +103,6 @@ function HeaderLinks({ ...props }) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            to="/"
             href="/performances"
             tag={Link}
             color="transparent"

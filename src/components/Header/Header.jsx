@@ -99,8 +99,8 @@ class Header extends React.Component {
                 {leftLinks}
               </Hidden>
             ) : (
-              brandComponent
-            )}
+                brandComponent
+              )}
           </div>
           <Hidden smDown implementation="css">
             {rightLinks}

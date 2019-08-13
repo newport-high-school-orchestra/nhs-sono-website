@@ -36,7 +36,7 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
-import profile from "assets/img/faces/christian.jpg";
+import profile from "assets/img/faces/conductor.jpg";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -48,9 +48,9 @@ import work2 from "assets/img/examples/clem-onojeghuo.jpg";
 import work3 from "assets/img/examples/cynthia-del-rio.jpg";
 import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
-
+import { Email } from "@material-ui/icons";
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
-
+import * as Constants from "views/Vars.jsx";
 class ProfilePage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
@@ -64,7 +64,7 @@ class ProfilePage extends React.Component {
       <div>
         <Header
           color="transparent"
-          brand="Material Kit React"
+          brand={Constants.siteBrand}
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -84,16 +84,10 @@ class ProfilePage extends React.Component {
                       <img src={profile} alt="..." className={imageClasses} />
                     </div>
                     <div className={classes.name}>
-                      <h3 className={classes.title}>Christian Louboutin</h3>
-                      <h6>DESIGNER</h6>
-                      <Button justIcon link className={classes.margin5}>
-                        <i className={"fab fa-twitter"} />
-                      </Button>
-                      <Button justIcon link className={classes.margin5}>
-                        <i className={"fab fa-instagram"} />
-                      </Button>
-                      <Button justIcon link className={classes.margin5}>
-                        <i className={"fab fa-facebook"} />
+                      <h3 className={classes.title}>{Constants.conductor}</h3>
+                      <h6>CONDUCTOR</h6>
+                      <Button justIcon link className={classes.margin5} href={Constants.conductorEmail} target="_blank">
+                        <Email className={classes.icons} />
                       </Button>
                     </div>
                   </div>
@@ -101,15 +95,20 @@ class ProfilePage extends React.Component {
               </GridContainer>
               <div className={classes.description}>
                 <p>
-                  An artist of considerable range, Chet Faker — the name taken
-                  by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
-                  performs and records all of his own music, giving it a warm,
-                  intimate feel with a solid groove structure.{" "}
+                  Barney Blough currently conducts the Sinfonia Orchestra with the Bellevue Youth Symphony and the Newport High School Orchestra. He has served as Music Director of the Seattle Chamber Orchestra, Assistant Conductor of the Rainier Symphony, and Assistant Conductor of the Lake Union Civic Orchestra. He has been a guest conductor of the Spokane Symphony, Orchestra Seattle, and Emerald City Philharmonic.
+                  {" "}
+                </p>
+                <p>
+                  Mr. Blough is also an active performer and is currently a member of Orchestra Seattle. He has performed with numerous orchestras and ensembles throughout the Northwest, including Federal Way Symphony, Bellevue Philharmonic, Yakima Symphony, and Wenatchee Symphony.
+                  {" "}
+                </p>
+                <p>
+                  Mr. Blough holds a Bachelor of Arts degree in Music Performance from Central Washington University, a Teaching Certificate from Seattle Pacific University, and a Professional Certificate from Pacific Lutheran University. He is currently working on his Master’s degree at Central Washington University.{" "}
                 </p>
               </div>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
-                  <NavPills
+                  {/* <NavPills
                     alignCenter
                     color="primary"
                     tabs={[
@@ -220,7 +219,7 @@ class ProfilePage extends React.Component {
                         )
                       }
                     ]}
-                  />
+                  /> */}
                 </GridItem>
               </GridContainer>
             </div>
