@@ -1,0 +1,26 @@
+{
+  "name": "nhs-orchestra-sono",
+  "homepage": "https://github.com/shreystechtips",
+  "authors": [
+    "shrey-aeron"
+  ],
+  "description": "Newport High School Orchestra",
+  "main": "dist/index.js",
+  "keywords": [
+    "nhs",
+    "orchestra",
+    "sono",
+    "supporters of newport orchestra",
+    "sinfonia",
+    "chamber orchestra"
+  ],
+  "license": "Creative TIM License",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
