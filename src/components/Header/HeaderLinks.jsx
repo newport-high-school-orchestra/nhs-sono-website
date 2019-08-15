@@ -27,7 +27,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
-
+import * as Constants from "views/Vars.jsx"
 // @material-ui/icons
 import { People, LibraryMusic, Event, Money, CalendarToday, ContactPhone } from "@material-ui/icons";
 
@@ -77,6 +77,7 @@ function HeaderLinks({ ...props }) {
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
+          hoverColor={Constants.mainColor}
           buttonText="About Us"
           buttonProps={{
             className: classes.navLink,
@@ -103,11 +104,11 @@ function HeaderLinks({ ...props }) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="/performances"
+            href="/performance"
             tag={Link}
             color="transparent"
             className={classes.navLink}>
-            <LibraryMusic className={classes.icons} /> Performances
+            <LibraryMusic className={classes.icons} /> Performance
         </Button>
         </Tooltip>
       </ListItem>

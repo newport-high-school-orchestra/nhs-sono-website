@@ -38,9 +38,8 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
 // Sections for this page
+import CalendarCard from "./Sections/CalendarCard.jsx";
 import ProductSection from "./Sections/ProductSection.jsx";
-import TeamSection from "./Sections/TeamSection.jsx";
-import WorkSection from "./Sections/WorkSection.jsx";
 
 const dashboardRoutes = ["/"];
 
@@ -52,8 +51,8 @@ class LandingPage extends React.Component {
         <Header
           color="transparent"
           routes={dashboardRoutes}
+          href='/'
           brand={Constants.siteBrand}
-
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -76,9 +75,17 @@ class LandingPage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <ProductSection />
-            <TeamSection />
-            <WorkSection />
+            <GridContainer justify="center">
+              <GridItem style={{ width: "23rem" }}>
+                <CalendarCard />
+              </GridItem>
+              <GridItem style={{ width: "23rem" }}>
+                <CalendarCard />
+              </GridItem>
+              <GridItem style={{ width: "23rem" }}>
+                <CalendarCard />
+              </GridItem>
+            </GridContainer>
           </div>
         </div>
         <Footer />

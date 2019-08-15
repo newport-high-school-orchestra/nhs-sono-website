@@ -31,6 +31,7 @@ import Drawer from "@material-ui/core/Drawer";
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 // core components
+import { Link } from "react-router-dom";
 import headerStyle from "assets/jss/material-kit-react/components/headerStyle.jsx";
 
 class Header extends React.Component {
@@ -80,7 +81,8 @@ class Header extends React.Component {
       leftLinks,
       brand,
       fixed,
-      absolute
+      absolute,
+      href
     } = this.props;
     const appBarClasses = classNames({
       [classes.appBar]: true,
@@ -88,7 +90,7 @@ class Header extends React.Component {
       [classes.absolute]: absolute,
       [classes.fixed]: fixed
     });
-    const brandComponent = <Button className={classes.title}>{brand}</Button>;
+    const brandComponent = <Link to='/' className={classes.title}> <Button className={classes.title}>{brand}</Button></Link>;
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>

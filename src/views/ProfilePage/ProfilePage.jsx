@@ -64,6 +64,7 @@ class ProfilePage extends React.Component {
       <div>
         <Header
           color="transparent"
+          href="/"
           brand={Constants.siteBrand}
           rightLinks={<HeaderLinks />}
           fixed
