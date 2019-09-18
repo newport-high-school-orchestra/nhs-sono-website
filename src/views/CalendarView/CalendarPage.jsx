@@ -64,25 +64,34 @@ class CalendarPage extends React.Component {
         />
         <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)}>
-          <div>
-            <div className={classes.container}>
-              {/* <GridContainer justify="center">
-                
-              </GridContainer>
-              <div className={classes.description}>
-                <p>
-                  Barney Blough currently conducts the Sinfonia Orchestra with the Bellevue Youth Symphony and the Newport High School Orchestra. He has served as Music Director of the Seattle Chamber Orchestra, Assistant Conductor of the Rainier Symphony, and Assistant Conductor of the Lake Union Civic Orchestra. He has been a guest conductor of the Spokane Symphony, Orchestra Seattle, and Emerald City Philharmonic.
+          <div> <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={6}>
+              <div className={classes.container}>
+
+              </div>
+            </GridItem>
+          </GridContainer>
+            <div className={classes.description}>
+              <p>
+                Barney Blough currently conducts the Sinfonia Orchestra with the Bellevue Youth Symphony and the Newport High School Orchestra. He has served as Music Director of the Seattle Chamber Orchestra, Assistant Conductor of the Rainier Symphony, and Assistant Conductor of the Lake Union Civic Orchestra. He has been a guest conductor of the Spokane Symphony, Orchestra Seattle, and Emerald City Philharmonic.
                   {" "}
-                </p>
-                <p>
-                  Mr. Blough is also an active performer and is currently a member of Orchestra Seattle. He has performed with numerous orchestras and ensembles throughout the Northwest, including Federal Way Symphony, Bellevue Philharmonic, Yakima Symphony, and Wenatchee Symphony.
+              </p>
+              <p>
+                Mr. Blough is also an active performer and is currently a member of Orchestra Seattle. He has performed with numerous orchestras and ensembles throughout the Northwest, including Federal Way Symphony, Bellevue Philharmonic, Yakima Symphony, and Wenatchee Symphony.
                   {" "}
-                </p>
-                <p>
-                  Mr. Blough holds a Bachelor of Arts degree in Music Performance from Central Washington University, a Teaching Certificate from Seattle Pacific University, and a Professional Certificate from Pacific Lutheran University. He is currently working on his Master’s degree at Central Washington University.{" "}
-                </p>
-              </div> */}
+              </p>
+              <p>
+                Mr. Blough holds a Bachelor of Arts degree in Music Performance from Central Washington University, a Teaching Certificate from Seattle Pacific University, and a Professional Certificate from Pacific Lutheran University. He is currently working on his Master’s degree at Central Washington University.{" "}
+              </p>
             </div>
+            <GridContainer justify="center">
+              <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
+                <div className={classes.container}>
+                  <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="116568/"></script>
+                </div>
+              </GridItem>
+            </GridContainer>
+
           </div>
         </div>
         <Footer />
