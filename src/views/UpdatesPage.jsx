@@ -22,6 +22,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
+// @material-ui/icons
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
@@ -29,13 +30,15 @@ import Button from "components/CustomButtons/Button.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
+import { Email } from "@material-ui/icons";
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 import * as Constants from "views/Vars.jsx";
 
-class CalendarPage extends React.Component {
+import { Videocam, Camera, MusicNote } from "@material-ui/icons/";
+
+class PerformancePage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     const imageClasses = classNames(
@@ -43,7 +46,6 @@ class CalendarPage extends React.Component {
       classes.imgRoundedCircle,
       classes.imgFluid
     );
-
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     return (
       <div>
@@ -68,20 +70,23 @@ class CalendarPage extends React.Component {
                   <div className={classes.profile}>
                     <div justify="center">
                       <h2 className={classes.title} justify="center">
-                        Calendar
+                        UPDATES
                       </h2>
                     </div>
                   </div>
-                  <br />
                 </GridItem>
                 <GridItem xs={12} sm={12} md={8} lg={10}>
                   <iframe
-                    src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=bmV3cG9ydG9yY2hlc3RyYUBnbWFpbC5jb20&amp;color=%23EF6C00&amp;title=Newport%20HS%20Orchestra&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0"
-                    style={{ borderWidth: 0 }}
-                    width="1000"
-                    height="600"
+                    class="airtable-embed"
+                    src="https://airtable.com/embed/shrx3rTftM6yK3iFW?backgroundColor=cyan&layout=card"
                     frameborder="0"
-                    scrolling="no"
+                    onmousewheel=""
+                    width="100%"
+                    height="533"
+                    style={{
+                      background: "transparent",
+                      border: "1px solid #ccc"
+                    }}
                   ></iframe>
                 </GridItem>
               </GridContainer>
@@ -102,8 +107,8 @@ class CalendarPage extends React.Component {
   }
 }
 
-CalendarPage.propTypes = {
+PerformancePage.propTypes = {
   classes: PropTypes.object
 };
 
-export default withStyles(profilePageStyle)(CalendarPage);
+export default withStyles(profilePageStyle)(PerformancePage);

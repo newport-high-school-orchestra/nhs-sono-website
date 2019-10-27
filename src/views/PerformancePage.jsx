@@ -67,6 +67,15 @@ class PerformancePage extends React.Component {
           <div>
             <div className={classes.container}>
               <GridContainer justify="center">
+                <GridItem xs={12} sm={12} md={6}>
+                  <div className={classes.profile}>
+                    <div justify="center">
+                      <h2 className={classes.title} justify="center">
+                        Performance
+                      </h2>
+                    </div>
+                  </div>
+                </GridItem>
                 <GridItem xs={12} sm={12} md={8} lg={10}>
                   <NavPills
                     color={Constants.mainColor}
@@ -80,23 +89,23 @@ class PerformancePage extends React.Component {
                               Collaboratively administrate empowered markets via
                               plug-and-play networks. Dynamically procrastinate
                               B2C users after installed base benefits.
-                </p>
+                            </p>
                             <br />
                             <p>
-                              Dramatically visualize customer directed convergence
-                              without revolutionary ROI. Collaboratively
-                              administrate empowered markets via plug-and-play
-                              networks. Dynamically procrastinate B2C users after
-                              installed base benefits.
-                </p>
+                              Dramatically visualize customer directed
+                              convergence without revolutionary ROI.
+                              Collaboratively administrate empowered markets via
+                              plug-and-play networks. Dynamically procrastinate
+                              B2C users after installed base benefits.
+                            </p>
                             <br />
                             <p>
-                              Dramatically visualize customer directed convergence
-                              without revolutionary ROI. Collaboratively
-                              administrate empowered markets via plug-and-play
-                              networks. Dynamically procrastinate B2C users after
-                              installed base benefits.
-                </p>
+                              Dramatically visualize customer directed
+                              convergence without revolutionary ROI.
+                              Collaboratively administrate empowered markets via
+                              plug-and-play networks. Dynamically procrastinate
+                              B2C users after installed base benefits.
+                            </p>
                           </span>
                         )
                       },
@@ -106,20 +115,20 @@ class PerformancePage extends React.Component {
                         tabContent: (
                           <span>
                             <p>
-                              Efficiently unleash cross-media information without
-                              cross-media value. Quickly maximize timely
+                              Efficiently unleash cross-media information
+                              without cross-media value. Quickly maximize timely
                               deliverables for real-time schemas.
-                </p>
+                            </p>
                             <br />
                             <p>
                               Dramatically maintain clicks-and-mortar solutions
-                              without functional solutions. Dramatically visualize
-                              customer directed convergence without revolutionary
-                              ROI. Collaboratively administrate empowered markets
-                              via plug-and-play networks. Dynamically
-                              procrastinate B2C users after installed base
-                              benefits.
-                </p>
+                              without functional solutions. Dramatically
+                              visualize customer directed convergence without
+                              revolutionary ROI. Collaboratively administrate
+                              empowered markets via plug-and-play networks.
+                              Dynamically procrastinate B2C users after
+                              installed base benefits.
+                            </p>
                           </span>
                         )
                       },
@@ -132,23 +141,23 @@ class PerformancePage extends React.Component {
                               Collaboratively administrate empowered markets via
                               plug-and-play networks. Dynamically procrastinate
                               B2C users after installed base benefits.
-                </p>
+                            </p>
                             <br />
                             <p>
-                              Dramatically visualize customer directed convergence
-                              without revolutionary ROI. Collaboratively
-                              administrate empowered markets via plug-and-play
-                              networks. Dynamically procrastinate B2C users after
-                              installed base benefits.
-                </p>
+                              Dramatically visualize customer directed
+                              convergence without revolutionary ROI.
+                              Collaboratively administrate empowered markets via
+                              plug-and-play networks. Dynamically procrastinate
+                              B2C users after installed base benefits.
+                            </p>
                             <br />
                             <p>
-                              Dramatically visualize customer directed convergence
-                              without revolutionary ROI. Collaboratively
-                              administrate empowered markets via plug-and-play
-                              networks. Dynamically procrastinate B2C users after
-                              installed base benefits.
-                </p>
+                              Dramatically visualize customer directed
+                              convergence without revolutionary ROI.
+                              Collaboratively administrate empowered markets via
+                              plug-and-play networks. Dynamically procrastinate
+                              B2C users after installed base benefits.
+                            </p>
                           </span>
                         )
                       }
@@ -157,9 +166,12 @@ class PerformancePage extends React.Component {
                 </GridItem>
               </GridContainer>
               <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
-
-                </GridItem>
+                <GridItem
+                  xs={12}
+                  sm={12}
+                  md={8}
+                  className={classes.navWrapper}
+                ></GridItem>
               </GridContainer>
             </div>
           </div>

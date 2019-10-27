@@ -27,9 +27,17 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
-import * as Constants from "views/Vars.jsx"
+import * as Constants from "views/Vars.jsx";
 // @material-ui/icons
-import { People, LibraryMusic, Event, Money, CalendarToday, ContactPhone } from "@material-ui/icons";
+import {
+  People,
+  LibraryMusic,
+  Event,
+  Money,
+  CalendarToday,
+  ContactPhone,
+  Inbox
+} from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
@@ -49,7 +57,7 @@ function HeaderFull() {
         height: 400,
         color: "white"
       }}
-    // {...rest}
+      // {...rest}
     />
   );
 }
@@ -69,10 +77,39 @@ function HeaderLinks({ ...props }) {
             href="/kiv"
             tag={Link}
             color="transparent"
-            className={classes.navLink}>
+            className={classes.navLink}
+          >
             <Event className={classes.icons} /> KIV
-        </Button>
+          </Button>
         </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          title="Today's PPT"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            to="/"
+            href="/updates"
+            tag={Link}
+            color="transparent"
+            className={classes.navLink}
+          >
+            <Inbox className={classes.icons} /> UPDATES
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          to="/"
+          href="/calendar"
+          tag={Link}
+          color="transparent"
+          className={classes.navLink}
+        >
+          <Event className={classes.icons} /> Calendar
+        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <CustomDropdown
@@ -90,10 +127,10 @@ function HeaderLinks({ ...props }) {
             </Link>,
             <Link to="/conductor" className={classes.dropdownLink}>
               Our Conductor
-          </Link>,
+            </Link>,
             <Link to="/" className={classes.dropdownLink}>
               Honors and Accomplishments
-          </Link>
+            </Link>
           ]}
         />
       </ListItem>
@@ -107,31 +144,24 @@ function HeaderLinks({ ...props }) {
             href="/performance"
             tag={Link}
             color="transparent"
-            className={classes.navLink}>
+            className={classes.navLink}
+          >
             <LibraryMusic className={classes.icons} /> Performance
-        </Button>
+          </Button>
         </Tooltip>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          to="/"
-          href="/calendar"
-          tag={Link}
-          color="transparent"
-          className={classes.navLink}>
-          <Event className={classes.icons} /> Calendar
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
+
+      {/* <ListItem className={classes.listItem}>
         <Button
           to="/"
           href="/contact"
           tag={Link}
           color="transparent"
-          className={classes.navLink}>
+          className={classes.navLink}
+        >
           <ContactPhone className={classes.icons} /> Contact
         </Button>
-      </ListItem>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
@@ -149,7 +179,7 @@ function HeaderLinks({ ...props }) {
           </Button>
         </Tooltip>
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <Tooltip
           title="We greatly appreciate your donations!"
           placement={window.innerWidth > 959 ? "top" : "left"}
@@ -160,11 +190,12 @@ function HeaderLinks({ ...props }) {
             href="/donate"
             tag={Link}
             color="transparent"
-            className={classes.navLink}>
+            className={classes.navLink}
+          >
             <Money className={classes.icons} /> Donate
-        </Button>
+          </Button>
         </Tooltip>
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 }

@@ -32,7 +32,7 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import * as Constants from "views/Vars.jsx"
+import * as Constants from "views/Vars.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
@@ -51,7 +51,7 @@ class LandingPage extends React.Component {
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          href='/'
+          href="/"
           brand={Constants.siteBrand}
           rightLinks={<HeaderLinks />}
           fixed
@@ -66,8 +66,9 @@ class LandingPage extends React.Component {
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Newport High School Orchestra</h1>
-
+                  <h1 className={classes.title}>
+                    Newport High School Orchestra
+                  </h1>
                 </div>
               </GridItem>
             </GridContainer>
@@ -79,12 +80,12 @@ class LandingPage extends React.Component {
               <GridItem style={{ width: "23rem" }}>
                 <CalendarCard />
               </GridItem>
-              <GridItem style={{ width: "23rem" }}>
+              {/* <GridItem style={{ width: "23rem" }}>
                 <CalendarCard />
               </GridItem>
               <GridItem style={{ width: "23rem" }}>
                 <CalendarCard />
-              </GridItem>
+              </GridItem> */}
             </GridContainer>
           </div>
         </div>

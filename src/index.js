@@ -27,9 +27,10 @@ import Components from "views/Components/Components.jsx";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
 import LoginPage from "views/LoginPage/LoginPage.jsx";
-import PerformancePage from "views/PerformancePage.jsx"
-import CalendarPage from "views/CalendarView/CalendarPage.jsx"
-import ContactPage from "views/ContactPage/ContactPage.jsx"
+import PerformancePage from "views/PerformancePage.jsx";
+import CalendarPage from "views/CalendarView/CalendarPage.jsx";
+import ContactPage from "views/ContactPage/ContactPage.jsx";
+import UpdatesPage from "views/UpdatesPage.jsx";
 
 var hist = createBrowserHistory();
 
@@ -37,6 +38,7 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/landing-page" component={LandingPage} />
+      <Route path="/updates" component={UpdatesPage} />
       <Route path="/performance" component={PerformancePage} />
       <Route path="/conductor" component={ProfilePage} />
       <Route path="/calendar" component={CalendarPage} />
