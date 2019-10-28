@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useDebugValue } from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // nodejs library that concatenates classes
@@ -32,13 +32,10 @@ import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
-import { Email } from "@material-ui/icons";
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 import * as Constants from "views/Vars.jsx";
 
-import { Videocam, Camera, MusicNote } from "@material-ui/icons/";
-
-class PerformancePage extends React.Component {
+class UpdatesPage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     const imageClasses = classNames(
@@ -107,8 +104,8 @@ class PerformancePage extends React.Component {
   }
 }
 
-PerformancePage.propTypes = {
+UpdatesPage.propTypes = {
   classes: PropTypes.object
 };
 
-export default withStyles(profilePageStyle)(PerformancePage);
+export default withStyles(profilePageStyle)(UpdatesPage);

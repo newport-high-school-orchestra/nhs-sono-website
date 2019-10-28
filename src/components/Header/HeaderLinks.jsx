@@ -73,9 +73,9 @@ function HeaderLinks({ ...props }) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            to="/"
+            // to="/"
             href="/kiv"
-            tag={Link}
+            // tag={Link}
             color="transparent"
             className={classes.navLink}
           >
@@ -90,9 +90,9 @@ function HeaderLinks({ ...props }) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            to="/"
+            // to="/"
             href="/updates"
-            tag={Link}
+            // tag={Link}
             color="transparent"
             className={classes.navLink}
           >
@@ -102,12 +102,15 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          to="/"
-          href="/calendar"
-          tag={Link}
+          href="./calendar"
           color="transparent"
           className={classes.navLink}
+
+          // tag={Link}
+          // to="/calendar"
+          // Link={true}
         >
+          {/* <Link to="/calendar" variant="inherit" color="primary"> */}
           <Event className={classes.icons} /> Calendar
         </Button>
       </ListItem>
@@ -142,7 +145,7 @@ function HeaderLinks({ ...props }) {
         >
           <Button
             href="/performance"
-            tag={Link}
+            // tag={Link}
             color="transparent"
             className={classes.navLink}
           >
