@@ -20,6 +20,7 @@ import React from "react";
 import DeleteIcon from "@material-ui/icons/Delete";
 import IconButton from "@material-ui/core/IconButton";
 // react components for routing our app without refresh
+// import { Link } from "@reach/router";
 import { Link } from "react-router-dom";
 
 // @material-ui/core components
@@ -72,15 +73,11 @@ function HeaderLinks({ ...props }) {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
-            // to="/"
-            href="/kiv"
-            // tag={Link}
-            color="transparent"
-            className={classes.navLink}
-          >
-            <Event className={classes.icons} /> KIV
-          </Button>
+          <Link to="/kiv" variant="inherit" className={classes.navLinkSetup}>
+            <Button color="transparent" className={classes.navLink}>
+              <Event className={classes.icons} /> KIV
+            </Button>
+          </Link>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -89,30 +86,23 @@ function HeaderLinks({ ...props }) {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
-            // to="/"
-            href="/updates"
-            // tag={Link}
-            color="transparent"
-            className={classes.navLink}
+          <Link
+            to="/updates"
+            variant="inherit"
+            className={classes.navLinkSetup}
           >
-            <Inbox className={classes.icons} /> UPDATES
-          </Button>
+            <Button color="transparent" className={classes.navLink}>
+              <Inbox className={classes.icons} /> UPDATES
+            </Button>
+          </Link>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          href="./calendar"
-          color="transparent"
-          className={classes.navLink}
-
-          // tag={Link}
-          // to="/calendar"
-          // Link={true}
-        >
-          {/* <Link to="/calendar" variant="inherit" color="primary"> */}
-          <Event className={classes.icons} /> Calendar
-        </Button>
+        <Link to="/calendar" variant="inherit" className={classes.navLinkSetup}>
+          <Button color="transparent" className={classes.navLink}>
+            <Event className={classes.icons} /> Calendar
+          </Button>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         <CustomDropdown
@@ -143,14 +133,15 @@ function HeaderLinks({ ...props }) {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
-            href="/performance"
-            // tag={Link}
-            color="transparent"
-            className={classes.navLink}
+          <Link
+            to="/performance"
+            variant="inherit"
+            className={classes.navLinkSetup}
           >
-            <LibraryMusic className={classes.icons} /> Performance
-          </Button>
+            <Button color="transparent" className={classes.navLink}>
+              <LibraryMusic className={classes.icons} /> Performance
+            </Button>
+          </Link>
         </Tooltip>
       </ListItem>
 

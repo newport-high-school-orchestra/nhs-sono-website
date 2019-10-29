@@ -80,6 +80,19 @@ const headerLinksStyle = theme => ({
       }
     }
   },
+  navLinkSetup: {
+    color: "inherit",
+    position: "relative",
+    fontWeight: "400",
+    fontSize: "12px",
+    textTransform: "uppercase",
+    textDecoration: "none",
+    margin: "0px",
+    display: "inline-flex",
+    "&:hover,&:focus": {
+      color: "inherit"
+    }
+  },
   notificationNavLink: {
     color: "inherit",
     padding: "0.9375rem",
