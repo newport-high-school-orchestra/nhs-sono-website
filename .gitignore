@@ -7,7 +7,7 @@
 /coverage
 
 # production
-/build
+# /build
 !build/_redirects
 
 # misc
@@ -35,3 +35,6 @@ yarn-error.log*
 .vscode/
 
 firebase-debug.log
+
+# Local Netlify folder
+.netlify
