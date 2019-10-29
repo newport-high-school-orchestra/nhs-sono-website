@@ -29,7 +29,7 @@ import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
 import PerformancePage from "views/PerformancePage.jsx";
 import CalendarPage from "views/CalendarView/CalendarPage.jsx";
 import ContactPage from "views/ContactPage/ContactPage.jsx";
-import UpdatesPage from "views/UpdatesPage.jsx";
+import UpdatesPage from "views/UpdatesViews/UpdatesPage.jsx";
 import LoginPage from "views/LoginPage/LoginPage.jsx";
 
 var hist = createBrowserHistory();

@@ -39,7 +39,7 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 
 // Sections for this page
 import CalendarCard from "./Sections/CalendarCard.jsx";
-import ProductSection from "./Sections/ProductSection.jsx";
+import UpdatesCard from "views/UpdatesViews/UpdatesCard.jsx";
 
 const dashboardRoutes = ["/"];
 
@@ -80,12 +80,13 @@ class LandingPage extends React.Component {
               <GridItem style={{ width: "23rem" }}>
                 <CalendarCard />
               </GridItem>
-              {/* <GridItem style={{ width: "23rem" }}>
-                <CalendarCard />
-              </GridItem>
-              <GridItem style={{ width: "23rem" }}>
+              {/* {/* <GridItem style={{ width: "23rem" }}>
                 <CalendarCard />
               </GridItem> */}
+              <GridItem style={{ width: "23rem" }}>
+                <UpdatesCard />
+              </GridItem>{" "}
+              */}
             </GridContainer>
           </div>
         </div>

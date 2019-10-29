@@ -36,7 +36,7 @@ class CalendarCard extends React.Component {
             src="https://calendar.google.com/calendar/embed?height=500&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=bmV3cG9ydG9yY2hlc3RyYUBnbWFpbC5jb20&amp;color=%23ffffff&amp;title&amp;showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA"
             style={{ borderWidth: "0" }}
             width="100%"
-            height="500"
+            height={Constants.cardHeight}
             frameborder="0"
             scrolling="no"
             class="fw-iframe"
