@@ -18,7 +18,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch, BrowserRouter } from "react-router-dom";
 
 import "assets/scss/material-kit-react.scss?v=1.7.0";
 
@@ -35,7 +35,7 @@ import LoginPage from "views/LoginPage/LoginPage.jsx";
 var hist = createBrowserHistory();
 
 ReactDOM.render(
-  <Router history={hist}>
+  <Router history={BrowserRouter.history}>
     <Switch>
       <Route path="/conductor" component={ProfilePage} />
       <Route path="/calendar" component={CalendarPage} />
